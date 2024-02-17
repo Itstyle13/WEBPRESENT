@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #5e0303;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo base para .producto */
+.producto {
+    flex: 0 1 auto; /* Esto permite que los elementos se encojan pero no se expandan, ajusta según necesidad */
+    margin: 10px; /* Espacio alrededor de cada producto */
+}
+
+/* Media query para pantallas mayores a 1024px */
+@media screen and (min-width: 1024px) {
+    .producto {
+        width: calc(25% - 20px); /* Ajusta el ancho para que 4 productos quepan en una fila, restando el margen */
+    }
+
+    .carrusel-imagenes img {
+        max-width: 100%; /* Asegura que las imágenes no se desborden de su contenedor */
+        height: auto; /* Mantiene la proporción de las imágenes */
+    }
+}
+
+.producto {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px; /* Puedes ajustar este padding según necesites */
+    display: inline-block; /* Cambio para que el tamaño dependa del contenido */
+    vertical-align: top; /* Para alinear correctamente si hay varios productos en línea */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Centra la imagen */
+}
+
+.contenedor-imagenes {
+    width: 100%; /* Ajusta esto según el tamaño deseado */
+    overflow: hidden; /* Esconde las imágenes que desbordan el contenedor */
+    display: flex; /* Alinea las imágenes horizontalmente */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    height: 300px; /* Ajusta la altura del contenedor según necesites */
+
+}
+
+.contenedor-imagenes img {
+    min-width: 100%; /* Asegura que cada imagen cubra todo el ancho del contenedor */
+    transition: transform 0.5s ease; /* Opcional: añade una transición suave para los cambios de imagen */
+}
+
+.carrusel {
+    position: relative;
+    display: inline-block; /* Ajusta este estilo según necesites */
+}
+
+.carrusel-imagenes img {
+    width: 300%; /* Asegura que la imagen cubra el ancho del carrusel */
+    display: none; /* Asegura que la imagen no tenga espacio extra alrededor */
+}
+
+.carrusel {
+    width: 100%; /* Esto hace que el carrusel ocupe todo el ancho de .producto */
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(250, 251, 252);
+    background-color: rgb(85, 78, 2); /* Fondo negro */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transform: translateY(-50%); /* Centra los botones verticalmente */
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    position: relative; /* o 'fixed' si quieres que siempre esté visible al final de la pantalla */
+
+}
+
+.oferta {
+    color: red;
+}
+
+.texto-pequeño {
+    font-size: 10px; /* O el tamaño que prefieras */
+}
+
+.color {
+    color: rgb(125, 198, 125);
+}
+
+/* Esconde los botones por defecto */
+.carrusel .next, .carrusel .prev {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+/* Muestra los botones cuando el usuario pasa el mouse sobre el contenedor del carrusel */
+.carrusel:hover .next, .carrusel:hover .prev {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ampliada {
+    transform: scale(3); /* Aumenta el tamaño al 200% */
+    transition: transform 0.3s ease; /* Hace que el cambio de tamaño sea gradual */
+    z-index: 100; /* Asegura que la imagen ampliada esté por encima de otros elementos */
+    position: relative; /* Necesario para que z-index funcione correctamente */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: rgb(244, 240, 240);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.magis {
+    color: rgb(255, 94, 0);
+}
+
+.laptops {
+    color: rgb(255, 94, 0);
+}
+
+.zapatillas {
+    color: rgb(255, 94, 0);
+}
+
+.Spotify {
+    color: rgb(255, 94, 0);
+}
+
+.Youtube {
+    color: rgb(255, 94, 0);
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ffffff; /* Color de fondo azul */
+    color: rgb(59, 7, 57); /* Texto blanco */
+    text-decoration: none; /* Eliminar subrayado del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+nav ul li a:hover {
+    background-color: #0b0c0e; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+.titulo {
+    font-size: 50px; /* Cambia el valor según prefieras */
+}
+
+@keyframes blinker {
+    0%, 100% {
+      text-shadow: 0 0 8px white;
+    }
+    50% {
+      text-shadow: none;
+    }
+  }
+  
+  .titulo {
+      color: white;
+      animation: blinker 2s linear infinite;
+  }
+  
+.especificaciones {
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}

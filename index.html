@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">PRESENT</h1>
+        <nav>
+            <ul>
+                <li><a href="#zapatillas">Calzados</a></li>
+                <li><a href="#laptops">Tecnología</a></li>
+                <li><a href="#magis">Magis Tv - Cable por Internet</a></li>
+                <li><a href="#Spotify">Spotify</a></li>
+                <li><a href="#Youtube">Youtube Music</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="zapatillas">
+            <h2 class="zapatillas">Calzados</h2>
+            <div class="productos">
+
+                <!-- Producto 1 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas1">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/CARACAL 369863 43/2025322013116_2.jpg"
+                                alt="ZAPATILLA PUMA CARACAL">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/CARACAL 369863 43/2025322013116-2.jpg"
+                                alt="ZAPATILLA PUMA CARACAL">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/CARACAL 369863 43/2025322013116-6.jpg"
+                                alt="ZAPATILLA PUMA CARACAL">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas1')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas1')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA CARACAL</h3>
+                     <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">40</option>
+                            <option value="37">40.5</option>
+                            <option value="38">41</option>
+                            <option value="39">42</option>
+                            <option value="40">42.5</option>
+                            <option value="41">43</option>
+                            <option value="42">44</option>
+                        </select>
+                    <p>Precio: S/250</p>
+                    <p class="oferta">Oferta internet: S/170</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20PUMA%20CARACAL,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas2">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NIGHT RUNNER V2 379257 01/2084307424293_2.jpg"
+                                alt="ZAPATILLA PUMA NIGHT RUNNER">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NIGHT RUNNER V2 379257 01/2084307424293-3.jpg"
+                                alt="ZAPATILLA PUMA NIGHT RUNNER">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NIGHT RUNNER V2 379257 01/2084307424293-4.jpg"
+                                alt="ZAPATILLA PUMA NIGHT RUNNER">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas2')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas2')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA NIGHT RUNNER</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">35.5</option>
+                            <option value="37">36</option>
+                            <option value="38">37</option>
+                        </select>
+                    <p>Precio: S/190</p>
+                    <p class="oferta">Oferta internet: S/155</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20PUMA%20NIGHT RUNNER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas3">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SMASH 3.0 L390987 01/2025317573564-6.jpg"
+                                alt="ZAPATILLA PUMA SMASH 3.0">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SMASH 3.0 L390987 01/2026307635149_2.jpg"
+                                alt="ZAPATILLA PUMA SMASH 3.0">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SMASH 3.0 L390987 01/2026307635149-2.jpg"
+                                alt="ZAPATILLA PUMA SMASH 3.0">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SMASH 3.0 L390987 01/2026307635149-4.jpg"
+                                alt="ZAPATILLA PUMA SMASH 3.0">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas3')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas3')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA SMASH 3.0</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="37">40.5</option>
+                            <option value="38">41</option>
+                            <option value="39">42</option>
+                            <option value="40">42.5</option>
+                            <option value="42">44</option>
+                        </select>
+                    <p>Precio: S/210</p>
+                    <p class="oferta">Oferta internet: S/170</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20PUMA%20SMASH 3.0,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas4">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SOFTRIDE CRUISE BOLD 376190 05/2084311148871_2.jpg"
+                                alt="ZAPATILLA PUMA CRUISE BOLD">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SOFTRIDE CRUISE BOLD 376190 05/2084311148871-2.jpg"
+                                alt="ZAPATILLA PUMA CRUISE BOLD">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/SOFTRIDE CRUISE BOLD 376190 05/2084311148871-3.jpg"
+                                alt="ZAPATILLA PUMA CRUISE BOLD">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas4')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas4')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA CRUISE BOLD</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">35.5</option>
+                            <option value="37">36</option>
+                            <option value="38">37.5</option>
+                            <option value="39">38.5</option>
+                        </select>
+                    <p>Precio: S/250</p>
+                    <p class="oferta">Oferta internet: S/150</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20PUMA%20SOFTRIDE CRUISE BOLD,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas5">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NRGY COMET/2084296997747-1.jpg"
+                                alt="ZAPATILLA PUMA NRGY COMET">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NRGY COMET/2084296997747-3.jpg"
+                                alt="ZAPATILLA PUMA NRGY COMET">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Puma/NRGY COMET/2084296997747-4.jpg"
+                                alt="ZAPATILLA PUMA NRGY COMET">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas5')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas5')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA NRGY COMET</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="37">35.5</option>
+                            <option value="38">36</option>
+                            <option value="39">38.5</option>                 
+                        </select>
+                    <p>Precio: S/200</p>
+                    <p class="oferta">Oferta internet: S/134</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20PUMA%20NRGY COMET,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas6">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/NIKE PARA HOMBRE COURT LEGACY NN/2025301830758_2.jpg"
+                                alt="ZAPATILLA NIKE COURT LEGAY">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/NIKE PARA HOMBRE COURT LEGACY NN/2025301830758-3.jpg"
+                                alt="ZAPATILLA NIKE COURT LEGAY">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/NIKE PARA HOMBRE COURT LEGACY NN/2025301830758-4.jpg"
+                                alt="ZAPATILLA NIKE COURT LEGAY">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas6')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas6')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA NIKE COURT LEGAY</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="37">40.5</option>
+                            <option value="38">41</option>
+                            <option value="39">41.5</option>
+                            <option value="40">42</option>
+                        </select>
+                    <p>Precio: S/270</p>
+                    <p class="oferta">Oferta internet: S/205</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20NIKE PARA HOMBRE COURT LEGACY,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 7 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas7">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2025301847213/2025301847213-2.jpg"
+                                alt="SANDALIAS NIKE">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/SANDALIAS NIKE PARA HOMBRE CN9675-100/2025301847077_2.jpg"
+                                alt="SANDALIAS NIKE">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/SANDALIAS NIKE PARA HOMBRE CN9675-100/2025301847077-2.jpg"
+                                alt="SANDALIAS NIKE">
+                            <img src="IMAGENES/Zapatillas/Zapatillas Nike/SANDALIAS NIKE PARA HOMBRE CN9675-100/2025301847077-3.jpg"
+                                alt="SANDALIAS NIKE">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas7')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas7')">&#10095;</a>
+                    </div>
+                    <h3>SANDALIAS NIKE</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">37</option>
+                            <option value="37">38</option>
+                        </select>
+                    <p>Precio: S/190</p>
+                    <p class="oferta">Oferta internet: S/160</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLA%20SANDALIAS NIKE PARA HOMBRE CN9675-100,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 8 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas8">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963463/2026315963463_2.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963463/2026315963463-1.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963463/2026315963463-3.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas8')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas8')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLAS ADIDAS COURTBLOCK</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">35</option>
+                            <option value="37">35.5</option>
+                            <option value="38">36</option>
+                            <option value="39">36.5</option>
+                            <option value="40">37</option>
+                            <option value="41">37.5</option>
+                            <option value="42">38</option>
+                            <option value="42">38.5</option>
+                        </select>
+                    <p>Precio: S/240</p>
+                    <p class="oferta">Oferta internet: S/170</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS ADIDAS COURTBLOCK,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 16 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas16">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963555/2026315963555_2.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963555/2026315963555-4.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2026315963555/2026315963555-7.jpg"
+                                alt="ZAPATILLAS ADIDAS COURTBLOCK">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas16')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas16')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLAS URBANAS ADIDAS PARA MUJER COURTBLOCK</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">35</option>
+                            <option value="37">35.5</option>
+                            <option value="38">36</option>
+                            <option value="39">36.5</option>
+                            <option value="40">37</option>
+                            <option value="41">37.5</option>
+                            <option value="42">38</option>
+                            <option value="42">38.5</option>
+                        </select>
+                    <p>Precio: S/240</p>
+                    <p class="oferta">Oferta internet: S/190</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS ADIDAS COURTBLOCK PARA MUJER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 17 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas17">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084321957494/2084321957494_2.jpg"
+                                alt="ZAPATILLAS PUMA FLYER RUNNER">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084321957494/2084321957494-2.jpg"
+                                alt="ZAPATILLAS PUMA FLYER RUNNER">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084321957494/2084321957494-3.jpg"
+                                alt="ZAPATILLAS PUMA FLYER RUNNER">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas17')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas17')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLAS PUMA FLYER RUNNER</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">40.5</option>
+                            <option value="37">42.5</option>
+                            <option value="38">42</option>
+                        </select>
+                    <p>Precio: S/200</p>
+                    <p class="oferta">Oferta internet: S/150</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS PUMA FLYER RUNNER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 18 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas18">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084307416205/2084307416205_2.jpg"
+                                alt="ZAPATILLAS PUMA PARA MUJER FLYER RUNNER">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084307416205/2084307416205-2.jpg"
+                                alt="ZAPATILLAS PUMA PARA MUJER FLYER RUNNER">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084307416205/2084307416205-3.jpg"
+                                alt="ZAPATILLAS PUMA PARA MUJER FLYER RUNNER">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas18')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas18')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLAS PUMA PARA MUJER FLYER RUNNER</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">35</option>
+                            <option value="37">35.5</option>
+                            <option value="38">34</option>
+                            <option value="39">34.5</option>
+                        </select>
+                    <p>Precio: S/200</p>
+                    <p class="oferta">Oferta internet: S/160</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS ADIDAS COURTBLOCK PARA MUJER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 19 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas19">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2025287591438/2025287591438_2.jpg"
+                                alt="ZAPATILLA PUMA PARA HOMBRE SMASH ACE">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2025287591438/2025287591438-1.jpg"
+                                alt="ZAPATILLA PUMA PARA HOMBRE SMASH ACE">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2025287591438/2025287591438-2.jpg"
+                                alt="ZAPATILLA PUMA PARA HOMBRE SMASH ACE">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas19')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas19')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLA PUMA PARA HOMBRE SMASH ACE</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">40.5</option>
+                            <option value="37">41</option>
+                            <option value="38">42</option>
+                            <option value="39">42.5</option>
+                        </select>
+                    <p>Precio: S/220</p>
+                    <p class="oferta">Oferta internet: S/162</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS ADIDAS COURTBLOCK PARA MUJER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 20 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas20">
+                        <div class="carrusel-imagenes">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084329763578/2084329763578_2.jpg"
+                                alt="ZAPATILLAS FUTBOL PASTO SINTÉTICO PUMA">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084329763578/2084329763578-2.jpg"
+                                alt="ZAPATILLAS FUTBOL PASTO SINTÉTICO PUMA">
+                            <img src="https://home.ripley.com.pe/Attachment/WOP_5/2084329763578/2084329763578-4.jpg"
+                                alt="ZAPATILLAS FUTBOL PASTO SINTÉTICO PUMA">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas20')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas20')">&#10095;</a>
+                    </div>
+                    <h3>ZAPATILLAS FUTBOL PASTO SINTÉTICO PUMA</h3>
+                    <!-- Menú desplegable de tallas -->
+                    <div class="tallas">
+                        <label for="talla-zapatilla">Tallas:</label>
+                        <select id="talla-zapatilla" name="talla">
+                            <option value="36">40</option>
+                            <option value="37">40.5</option>
+                            <option value="38">41</option>
+                            <option value="39">42</option>
+                            <option value="39">42.5</option>
+                            <option value="39">43</option>
+                        </select>
+                    <p>Precio: S/199</p>
+                    <p class="oferta">Oferta internet: S/140</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20ZAPATILLAS ADIDAS COURTBLOCK PARA MUJER,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="laptops">
+            <h2 class="laptops">Laptops</h2>
+            <div class="productos">
+                <!-- Producto 9 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas9">
+                        <!-- Imágenes omitidas para brevedad -->
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Laptop/Acer Nitro 5/2004321220534_2.jpg"
+                                alt="Laptop Acer Nitro 5">
+                            <img src="IMAGENES/Laptop/Acer Nitro 5/2004321220534-1.jpg"
+                                alt="Laptop Acer Nitro 5">
+                            <img src="IMAGENES/Laptop/Acer Nitro 5/2004321220534-2.jpg"
+                                alt="Laptop Acer Nitro 5">
+                            <img src="IMAGENES/Laptop/Acer Nitro 5/2004321220534-3.jpg"
+                                alt="Laptop Acer Nitro 5">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas9')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas9')">&#10095;</a>
+                    </div>
+                    <h3>LAPTOP ACER NITRO 5</h3>
+                    <button onclick="toggleEspecificaciones('especificacionesLaptop9')">Especificaciones</button>
+                    <div id="especificacionesLaptop9" class="especificaciones" style="display: none;">
+                        <p>Procesador: Intel Core i5 12450H</p>
+                        <p>RAM: 8GB</p>
+                        <p>Almacenamiento: SSD 512GB</p>
+                        <p>Gráficos: NVIDIA RTX 3050 4GB</p>
+                        <p>Sistema operativo: Windows 11 Home</p>
+                        <p>Velocidad procesador (ghz): 4,4Ghz</p>
+                        <p>Garantía: 1 Año</p>
+                        <p>Número de núcleos: 8</p>
+                        <p>Duración batería (hr): Hasta 4 horas</p>
+                        <!-- Añade todas las especificaciones que desees aquí -->
+                    </div>
+                    <p>Precio: S/4300</p>
+                    <p class="oferta">Oferta internet: S/3200</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20LAPTOP%20ACER%20NITRO%205,%20¿está%20disponible?" class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 10 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas10">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Laptop/LAPTOP ASUS TUF GAMING F15 FX506HF-HN014W INTEL CORE I5 11VA GEN 6-CORE 8GB 512GB SSD RTX 2050/2004317213755_2.jpg"
+                                alt="LAPTOP ASUS TUF GAMING">
+                            <img src="IMAGENES/Laptop/LAPTOP ASUS TUF GAMING F15 FX506HF-HN014W INTEL CORE I5 11VA GEN 6-CORE 8GB 512GB SSD RTX 2050/2004317213755-2.jpg"
+                                alt="LAPTOP ASUS TUF GAMING">
+                            <img src="IMAGENES/Laptop/LAPTOP ASUS TUF GAMING F15 FX506HF-HN014W INTEL CORE I5 11VA GEN 6-CORE 8GB 512GB SSD RTX 2050/2004317213755-3.jpg"
+                                alt="LAPTOP ASUS TUF GAMING">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas10')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas10')">&#10095;</a>
+                    </div>
+                    <h3>LAPTOP ASUS TUF GAMING</h3>
+                    <button onclick="toggleEspecificaciones('especificacionesLaptop10')">Especificaciones</button>
+                    <div id="especificacionesLaptop10" class="especificaciones" style="display: none;">
+                        <p>Procesador: Intel Core i5-11400H</p>
+                        <p>RAM: 8GB</p>
+                        <p>Almacenamiento: SSD 512GB</p>
+                        <p>Gráficos: NVIDIA GeForce RTX 2050 Laptop GPU</p>
+                        <p>Sistema operativo: Windows 11 Home</p>
+                        <p>Velocidad procesador (ghz): 	2.7GHz</p>
+                        <p>Garantía: 1 Año</p>
+                        <p>Número de núcleos: 8</p>
+                        <p>Duración batería (hr): Hasta 5Hrs</p>
+                        <!-- Añade todas las especificaciones que desees aquí -->
+                    </div>
+                    <p>Precio: S/3399</p>
+                    <p class="oferta">Oferta internet: S/2849</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20LAPTOP ASUS TUF GAMING F15,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 11 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas11">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Laptop/LAPTOP GAMING HP VICTUS 15-FA0000LA INTEL CORE I5 12VA GEN 16GB 512GB SSD 15.6 FHD NVIDIA GEFORCE RTX 3050 GPU (4 GB GDDR6 DEDICATED)/2004318647207_2.jpg"
+                                alt="LAPTOP GAMING HP VICTUS">
+                            <img src="IMAGENES/Laptop/LAPTOP GAMING HP VICTUS 15-FA0000LA INTEL CORE I5 12VA GEN 16GB 512GB SSD 15.6 FHD NVIDIA GEFORCE RTX 3050 GPU (4 GB GDDR6 DEDICATED)/2004318647207-6.jpg"
+                                alt="LAPTOP GAMING HP VICTUS">
+                            <img src="IMAGENES/Laptop/LAPTOP GAMING HP VICTUS 15-FA0000LA INTEL CORE I5 12VA GEN 16GB 512GB SSD 15.6 FHD NVIDIA GEFORCE RTX 3050 GPU (4 GB GDDR6 DEDICATED)/2004318647207-7.jpg"
+                                alt="LAPTOP GAMING HP VICTUS">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas11')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas11')">&#10095;</a>
+                    </div>
+                    <h3>LAPTOP GAMING HP VICTUS</h3>
+                    <button onclick="toggleEspecificaciones('especificacionesLaptop11')">Especificaciones</button>
+                    <div id="especificacionesLaptop11" class="especificaciones" style="display: none;">
+                        <p>Procesador: Core i5 11va generación</p>
+                        <p>RAM: 16GB</p>
+                        <p>Almacenamiento: SSD 	512GB</p>
+                        <p>Gráficos: NVIDIA® GeForce RTX™ 3050 Laptop GPU (4 GB GDDR6 dedicated)</p>
+                        <p>Sistema operativo: Windows 11 Home</p>
+                        <p>Velocidad procesador (ghz): 4,4 GHz</p>
+                        <p>Garantía: 1 Año</p>
+                        <p>Número de núcleos: 8</p>
+                        <p>Duración batería (hr): Hasta 5Hrs</p>
+                        <!-- Añade todas las especificaciones que desees aquí -->
+                    </div>
+                    <p>Precio: S/4300</p>
+                    <p class="oferta">Oferta internet: S/3200</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20LAPTOP GAMING HP VICTUS 15,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 12 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas12">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Laptop/LAPTOP LENOVO IDEAPAD GAMING 3 AMD RYZEN 5 6600H 8GB 512GB SSD RTX 3050 4GB/2004326027756_2.jpg"
+                                alt="LAPTOP LENOVO IDEAPAD GAMING 3">
+                            <img src="IMAGENES/Laptop/LAPTOP LENOVO IDEAPAD GAMING 3 AMD RYZEN 5 6600H 8GB 512GB SSD RTX 3050 4GB/2004326027756-1.jpg"
+                                alt="LAPTOP LENOVO IDEAPAD GAMING 3">
+                            <img src="IMAGENES/Laptop/LAPTOP LENOVO IDEAPAD GAMING 3 AMD RYZEN 5 6600H 8GB 512GB SSD RTX 3050 4GB/2004326027756-5.jpg"
+                                alt="LAPTOP LENOVO IDEAPAD GAMING 3">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas12')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas12')">&#10095;</a>
+                    </div>
+                    <h3>LAPTOP LENOVO IDEAPAD GAMING 3</h3>
+                    <button onclick="toggleEspecificaciones('especificacionesLaptop12')">Especificaciones</button>
+                    <div id="especificacionesLaptop12" class="especificaciones" style="display: none;">
+                        <p>Procesador: AMD RYZEN™ 5 6600H</p>
+                        <p>RAM: 8GB</p>
+                        <p>Almacenamiento: SSD 	512GB</p>
+                        <p>Gráficos: NVIDIA® GeForce RTX™ 3050 Laptop GPU (4 GB GDDR6 dedicated)</p>
+                        <p>Sistema operativo: Windows 11 Home</p>
+                        <p>Velocidad procesador (ghz): 3.3 GHZ</p>
+                        <p>Garantía: 1 Año</p>
+                        <p>Número de núcleos: 6</p>
+                        <p>Duración batería (hr): Hasta 5Hrs</p>
+                        <!-- Añade todas las especificaciones que desees aquí -->
+                    </div>
+                    <p>Precio: S/3399</p>
+                    <p class="oferta">Oferta internet: S/2849</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20LAPTOP LENOVO IDEAPAD GAMING 3,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+
+                <!-- Producto 21 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas21">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Redmi Buds 3 Pro/1.png"
+                                alt="XIAOMI REDMI BUDS 3 PRO">
+                            <img src="IMAGENES/Redmi Buds 3 Pro/2.png"
+                                alt="XIAOMI REDMI BUDS 3 PRO">
+                            <img src="IMAGENES/Redmi Buds 3 Pro/3.png"
+                                alt="XIAOMI REDMI BUDS 3 PRO">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas21')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas21')">&#10095;</a>
+                    </div>
+                    <h3>XIAOMI REDMI BUDS 3 PRO</h3>
+                    <button onclick="toggleEspecificaciones('especificacionesLaptop21')">Especificaciones</button>
+                    <div id="especificacionesLaptop21" class="especificaciones" style="display: none;">
+                        <p>Canelación de ruido activa y pasiva</p>
+                        <p>Proteccion IPX4 contra sudor, gotas de agua y polvo</p>
+                        <p>Duracion de bateria: 28hr</p>
+                        <p>Ergonómicos</p>
+                        <p>Con microfono: juegos y llamadas</p>
+                        <p>Innalámbricos</p>
+                        <p>Modo transparencia o ambiente</p>
+                        <p>Posee carga innalámbrica</p>
+                        <!-- Añade todas las especificaciones que desees aquí -->
+                    </div>
+                    <p>Precio: S/220</p>
+                    <p class="oferta">Oferta internet: S/180</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20XIAOMI REDMI BUDS 3 PRO,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="magis">
+            <h2 class="magis">Magis Tv</h2>
+            <div class="productos">
+                <!-- Producto 13 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas13">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Magis Tv/Captura de pantalla 2024-02-01 173304.png" alt="MAGIS TV">
+                            <img src="IMAGENES/Magis Tv/Captura de pantalla 2024-01-29 123352.png" alt="MAGIS TV">
+                            <img src="IMAGENES/Magis Tv/353904533_5902120019888901_7951852876696639338_n.jpg"
+                                alt="MAGIS TV">
+                            <img src="IMAGENES/Magis Tv/Captura de pantalla 2024-01-29 123112.png" alt="MAGIS TV">
+                            <img src="IMAGENES/Magis Tv/Captura de pantalla 2024-01-29 123257.png" alt="MAGIS TV">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas13')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas13')">&#10095;</a>
+                    </div>
+                    <h3>MAGIS TV</h3>
+                    <p>Precio Normal: S/100</p>
+                    <p class="oferta">Precio por Temporada: S/25</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20Magis Tv,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="Spotify">
+            <h2 class="Spotify">Spotify</h2>
+            <div class="productos">
+                <!-- Producto 14 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas14">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Spotify/pasted-image-0-4-1024x576.png" alt="Spotify">
+
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas14')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas14')">&#10095;</a>
+                    </div>
+                    <h3>Spotify</h3>
+                    <p>Precio Normal: S/100</p>
+                    <p class="oferta">Precio por Temporada: S/25 - un solo pago</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20Spotify,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="Youtube">
+            <h2 class="Youtube">Youtube Music</h2>
+            <div class="productos">
+                <!-- Producto 15 -->
+                <article class="producto">
+                    <div class="carrusel" id="carruselZapatillas15">
+                        <div class="carrusel-imagenes">
+                            <img src="IMAGENES/Youtube Music/descarga.png" alt="Youtube">
+                        </div>
+                        <a class="prev" onclick="cambiarImagen(-1, 'carruselZapatillas15')">&#10094;</a>
+                        <a class="next" onclick="cambiarImagen(1, 'carruselZapatillas15')">&#10095;</a>
+                    </div>
+                    <h3>Youtube Music</h3>
+                    <p>Precio Normal: S/100</p>
+                    <p class="oferta">Precio por Temporada: S/25 - un solo pago</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51938729476&text=Hola,%20estoy%20interesado(a)%20en%20la%20Youtube Music,%20¿está%20disponible?"
+                        class="whatsapp-button" target="_blank">Comprar</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech & Shoes - PRESENT</p>
+        <p class="color">Whatsapp: 938729476 - Pago por Yape</p>
+        <p class="texto-pequeño">"Precios solo disponibles en www.ripley.com.pe y Fonocompras. Precios Internet
+            publicados incluyen descuento adicional. Precios sujetos a variaciones sin previo aviso. Productos sujetos a
+            disponibilidad de stock. Solo consumo familiar. Stock mínimo 1 unidad por producto. Ofertas se rigen de
+            acuerdo a los términos y condiciones. Despacho de producto se realizará una vez confirmada la compra".</p>
+    </footer>
+
+    <script>
+        let indiceImagen = {};
+
+        function inicializarCarruseles() {
+            // Encuentra todos los carruseles en la página
+            let carruseles = document.querySelectorAll('.carrusel');
+            carruseles.forEach((carrusel) => {
+                let id = carrusel.getAttribute('id');
+                indiceImagen[id] = 0; // Inicializa el índice de imagen para cada carrusel
+                mostrarImagen(0, id); // Muestra la primera imagen de cada carrusel
+            });
+        }
+
+        function mostrarImagen(n, carruselId) {
+            let i;
+            let carrusel = document.getElementById(carruselId);
+            let imagenes = carrusel.getElementsByClassName("carrusel-imagenes")[0].getElementsByTagName("img");
+            if (n >= imagenes.length) { indiceImagen[carruselId] = 0; }
+            if (n < 0) { indiceImagen[carruselId] = imagenes.length - 1; }
+            for (i = 0; i < imagenes.length; i++) {
+                imagenes[i].style.display = "none";
+            }
+            imagenes[indiceImagen[carruselId]].style.display = "block";
+        }
+
+        function cambiarImagen(n, carruselId) {
+            mostrarImagen(indiceImagen[carruselId] += n, carruselId);
+
+        }
+
+        window.onload = inicializarCarruseles; // Asegura que los carruseles se inicialicen cuando la página cargue
+
+        document.addEventListener("DOMContentLoaded", function () {
+            inicializarCarruseles();
+            agregarEventoClickAMagis();
+        });
+
+        function agregarEventoClickAMagis() {
+            let imagenesMagis = document.querySelectorAll('#magis .carrusel-imagenes img');
+            imagenesMagis.forEach(img => {
+                img.addEventListener('click', function () {
+                    let estaAmpliada = img.classList.contains('ampliada');
+                    // Primero, quitar la clase ampliada de todas las imágenes para asegurarse de que solo una pueda estar ampliada a la vez
+                    imagenesMagis.forEach(i => i.classList.remove('ampliada'));
+                    // Si la imagen clickeada no estaba ya ampliada, ampliarla
+                    if (!estaAmpliada) {
+                        img.classList.add('ampliada');
+                    }
+                });
+            });
+        }
+    </script>
+
+    <script>
+    function toggleEspecificaciones(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+    
+</body>
+
+</html>
